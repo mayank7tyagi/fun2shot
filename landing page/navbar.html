@@ -1,0 +1,232 @@
+ <!-- <div class="colorful-text">
+    <a href="index.html" data-target="home">
+            <span>F</span>
+            <span>u</span>
+            <span>n</span>
+            <span>2</span>
+            <span>S</span>
+            <span>h</span>
+            <span>o</span>
+            <span>t</span>
+    </a>
+</div>
+<ul class="menu">
+    <li><a href="games.html" data-target="games">Games</a></li>
+    <li><a href="about.html" data-target="about">About</a></li>
+    <li><a href="contact.html" data-target="contact">Contact</a></li>
+</ul>
+
+
+
+
+
+
+
+
+<style>
+    .colorful-text {
+        display:inline-block;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Monoton', sans-serif;
+        text-transform: uppercase;
+        position:absolute;
+        top: 10px;
+        left: 50px;
+        margin-bottom: 30px;
+        
+    }
+
+    .colorful-text span {
+        display: inline-block;
+    }
+
+    .colorful-text span:nth-child(1) { color: #FF0000; } /* Red */
+    .colorful-text span:nth-child(2) { color: #00FF00; } /* Green */
+    .colorful-text span:nth-child(3) { color: #0000FF; } /* Blue */
+    .colorful-text span:nth-child(4) { color: #FFA500; } /* Orange */
+    .colorful-text span:nth-child(5) { color: #FFFF00; } /* Yellow */
+    .colorful-text span:nth-child(6) { color: #800080; } /* Purple */
+    .colorful-text span:nth-child(8) { color: #00FFFF; } /* Cyan */
+
+    .colorful-text span:nth-child(4) {
+        transform: rotate(320deg);
+    }
+
+
+    .navbar{
+        min-height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid 3px gray;
+        box-shadow: 2px 2px 35px 2px #8a8a1d;
+        padding: 12px 28px;
+        font-weight: 700;
+        font-size: larger;
+        align-items: center;
+        letter-spacing: 3px;
+    }
+
+.navbar .menu{
+    display : flex;
+    
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar .menu{
+    margin-right : 38px;
+    text-decoration: none;
+    color: rgb(75, 75, 44);
+}
+
+</style> >
+
+
+
+<a href="index.html">Home</a>
+<a href="games.html">Games</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact us</a>
+<div class="animation start-home"></div>
+
+
+
+
+
+<style>
+
+    nav{
+
+        margin: 27px auto 0;
+
+        position: relative;
+        width:590px;
+        height:50px;
+        background-color:#34495e;
+        border-radius: 8px;
+        font-size: 0;
+    }
+    nav a{
+        line-height: 50px;
+        height: 100%;
+        font-size: 15px;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        text-decoration:none;
+        text-transform:uppercase;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav .animation {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        z-index: O;
+        transition: all .5s ease 0s;
+        border-radius: 8px;
+    }
+
+    a:nth-child(1){
+        width:0px;
+    }
+    a:nth-child(2){
+        width:110px;
+    }
+
+    a:nth-child(3){
+        width:100px;
+    }
+    a:nth-child(4){
+        width:160px;
+    }
+    a:nth-child(5){
+        width:120px;
+    }
+    
+    nav .start-home, a:nth-child(1):hover~.animation{
+        width:100px;
+        left: 0;
+        background-color: #1abc9c;
+    }
+    nav .start-home, a:nth-child(2):hover~.animation{
+        width:110px;
+        left: 100px;
+        background-color: #e74c3c;
+    }
+    nav .start-home, a:nth-child(3):hover~.animation{
+        width:100px;
+        left: 210px;
+        background-color: #3498db;;
+    }
+    nav .start-home, a:nth-child(4):hover~.animation{
+        width:160px;
+        left: 310px;
+        background-color: #9b59b6;
+    }
+    nav .start-home, a:nth-child(5):hover~.animation{
+        width:120px;
+        left: 470px;
+        background-color: #e67e22;
+    }
+
+
+
+
+</style> -->
+
+<!-- <div class="logo"><i class="fas fa-meteor fa-2x"></i>Logo</div>
+        <ul class="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+
+        <ul class="login-menu">
+            <li>Sinup</li>
+            <li>Login</li>
+        </ul>
+
+        <style>
+            /* menu bar */
+.navbar{
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 3px gray;
+    box-shadow: 2px 2px 35px 2px #8a8a1d;
+    padding:12px 28px;
+    font-weight: 700;
+    font-size: larger;
+    align-items: center;
+    letter-spacing: 3px;
+}
+.navbar i{
+    color:#8a8a1d;
+}
+.navbar .menu, .navbar .login-menu{
+display: flex;
+}
+.navbar ul{
+    list-style: none;
+}
+
+.navbar .menu a, .navbar .login-menu li{
+  margin-right:38px;
+  text-decoration: none;  
+  color:rgb(75, 75, 44)
+}
+ </style>
+ <script>
+     const li = document.querySelectorAll('.menu li')[0]
+     li.addEventListener('click', (e)=>{
+         e.preventDefault()
+         alert('Home Clicked')
+         window.location.href='/index.html'
+     })
+ </script> 
+ -->
