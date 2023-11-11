@@ -1,0 +1,11 @@
+
+body {
+    text-align: center;
+    background-image: url(./download.jpeg);
+}
+
+#board {
+    background-color: #000000;
+    border-top: 5px solid skyblue;
+    border-bottom: 5px solid skyblue;
+}
