@@ -1,0 +1,571 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* .container{
+    width: 100%;
+    min-height: 100vh;
+    backdrop-filter: blur(1px);
+    pointer-events: none;
+} */
+
+body{
+    font-size: 12px;
+    background: #2c5350 ;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+
+span{
+    color: #2BD6B4;
+}
+
+.textBox .homeBtn:hover{
+    background-color: var(--i);
+    color: #000;
+}
+
+.bgAnimation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    background: #1d1d1d;
+    filter: saturate(2);
+    overflow: hidden;
+    position: fixed;
+
+}
+
+.colorBox{
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 2s ease;
+    position: relative;
+    margin: 2px;
+    background: #1d1d1d;
+}
+
+.colorBox:hover{
+    background: #00bfff;
+    transition-duration: 0s;
+}
+
+.backgroundAmim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #00bfff;
+    filter: blur(60px);
+    animation: animBack 6s linear infinite;
+    position: fixed;
+}
+
+@keyframes animBack {
+    0%{
+        top: -60px;
+    }
+    100%{
+        top: 120%;
+    }
+}
+
+
+.colorful-text {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Monoton', sans-serif;
+    text-transform: uppercase;
+    
+     top: 17px;
+    /*left: 15px;
+    right: 40px; */
+
+}
+
+.colorful-text span {
+    display: inline-block;
+}
+
+.colorful-text span:nth-child(1) { color: #FF0000; } /* Red */
+.colorful-text span:nth-child(2) { color: #00FF00; } /* Green */
+.colorful-text span:nth-child(3) { color: #0000FF; } /* Blue */
+.colorful-text span:nth-child(4) { color: #FFA500; } /* Orange */
+.colorful-text span:nth-child(5) { color: #FFFF00; } /* Yellow */
+.colorful-text span:nth-child(6) { color: #800080; } /* Purple */
+.colorful-text span:nth-child(8) { color: #00FFFF; } /* Cyan */
+
+.colorful-text span:nth-child(4) {
+    transform: rotate(320deg);
+}
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Three columns in the grid */
+    gap: 50px; /* Spacing between cards */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 120px;
+    left: 80px;
+}
+
+/* Define styles for individual cards */
+.card {
+    width: 300px;
+    height: 200px;
+    background-color: #ab4914; /* Change the card background color as needed */
+    border: 2px solid #FFF;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 200px;
+    color: #fff64f;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+body{
+    background: #111;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+
+.textBox .homeBtn:hover{
+    background-color: var(--i);
+    color: #000;
+}
+
+.bgAnimation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    background: #1d1d1d;
+    filter: saturate(2);
+    overflow: hidden;
+    position: fixed;
+
+}
+
+.colorBox{
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 2s ease;
+    position: relative;
+    margin: 2px;
+    background: #171121;
+}
+
+
+
+.backgroundAmim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: skyblue;
+    filter: blur(60px);
+    animation: animBack 6s linear infinite;
+    position: fixed;
+}
+
+@keyframes animBack {
+    0%{
+        top: -60px;
+    }
+    100%{
+        top: 120%;
+    }
+}
+
+    /* Making it responsive  */
+    @media (max-width: 768px) {
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* Two columns in the grid */
+    
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 120px;
+        }
+        .c11 {
+            margin-bottom: 15px;
+        }
+    
+        .card img {
+        height: 60%;
+        }
+    
+        .card h3 {
+        font-size: 14px;
+        }
+        .colorful-text {
+            font-size: 36px;
+        
+        }
+        .card{
+            width: 250px;
+            font-size: 20px;
+        }
+    }
+
+
+
+/* In this code, I've used CSS Grid to create a 3x4 grid, resulting in 12 grid cells.
+Since you want 11 cards, you can adjust the number of cards to fit your layout.
+The cards are automatically arranged in the grid.
+ */
+
+.stretched-link::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: auto;
+    content: "";
+    background-color: rgba(0,0,0,0);
+}
+
+/* ..........navbar...........  */
+
+button {
+    background: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:focus,
+  input:focus {
+    outline: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+}
+
+
+  
+  section {
+    height: 100vh;
+  }
+  
+  #home {
+    background-color: #ddd;
+  }
+  
+  #about {
+    background-color: #aaa;
+  }
+  
+  #work {
+    background-color: #888;
+  }
+  
+  #contact {
+    background-color: #666;
+  }
+  
+  /*-------------Helpers-------------*/
+  .skew {
+    transform: skew(-20deg);
+  }
+  
+  .un-skew {
+    transform: skew(20deg);
+  }
+  
+  /*-------------Nav-------------*/
+  #nav-wrapper {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  #nav {
+   
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    font-family: "Saira Semi Condensed", sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    height: 4em;
+    overflow: hidden;
+
+  }
+  #nav.nav-visible {
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .nav {
+    display: flex;
+    height: 4em;
+    line-height: 4em;
+    flex-grow: 1;
+  }
+  
+  .nav-link,
+  .logo {
+    padding: 1em;
+  }
+  
+  .u-nav{
+    color: white;
+  }
+  /* span.gradient {
+    background: blue;
+    background: -webkit-linear-gradient(45deg, blue, blueviolet);
+    background: linear-gradient(45deg, blue, blueviolet);
+    padding: 0 1em;
+    position: relative;
+    right: 1em;
+    margin-right: auto;
+  } */
+  span.gradient:hover {
+    animation-name: logo-hover;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.17, 0.57, 0.31, 0.85);
+  }
+  
+  h1.logo {
+    font-weight: 300;
+    font-size: 1.75em;
+    line-height: 0.75em;
+    color: #fff;
+  }
+  
+  h1.logo a, a:active, a:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .nav-link {
+    text-transform: uppercase;
+    text-align: center;
+    border-top: 0.5px solid transparent;
+  }
+  
+  /* a:link, a:visited, a:active {
+    text-decoration: none;
+    color: blue;
+  } */
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  /* .btn-nav {
+    color: blue;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+   */
+  @media (min-width: 800px) {
+    #nav-wrapper {
+      overflow: hidden;
+    }
+  
+    #nav {
+      overflow: hidden;
+      flex-direction: row;
+    }
+  
+    .nav-link {
+      border-top: none;
+    }
+  
+    .right {
+      overflow: hidden;
+      flex-direction: row;
+      justify-content: flex-end;
+      position: relative;
+      left: 1.5em;
+      height: auto;
+    }
+  
+    .btn-nav {
+      display: none;
+    }
+   
+    .nav-link-span {
+      transform: skew(20deg);
+      display: inline-block;
+    }
+  
+    .nav-link {
+      transform: skew(-20deg);
+      color: #777;
+      text-decoration: none;
+    }
+    .nav-link:last-child {
+      padding-right: 3em;
+    }
+  
+    a:hover.nav-link:not(.active) {
+      color: #444;
+      background: linear-gradient(45deg,blue, blueviolet);
+    }
+  }
+  @keyframes logo-hover {
+    20% {
+      padding-right: 0em;
+    }
+    100% {
+      padding-right: 5em;
+    }
+  }
+
+
+
+
+/* ..........footer...........  */
+
+    .footer {
+        position: relative;
+        width: 100%;
+        background: #3586ff;
+        min-height: 100px;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        bottom: -1300px;
+
+    }
+    
+    .menu {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        flex-wrap: wrap;
+    }
+    
+    .menu__item {
+        list-style: none;
+    }
+    
+
+
+    .menu__link {
+        font-size: 1.2rem;
+        color: #fff;
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+        text-decoration: none;
+        opacity: 0.75;
+        font-weight: 300;
+    }
+    
+    .menu__link:hover {
+        opacity: 1;
+    }
+    
+    .footer p {
+        color: #fff;
+        margin: 15px 0 10px 0;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    
+    .wave {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url("https://i.ibb.co/wQZVxxk/wave.png");
+        background-size: 1000px 100px;
+    }
+    
+    .wave#wave1 {
+        z-index: 1000;
+        opacity: 1;
+        bottom: 0;
+        animation: animateWaves 4s linear infinite;
+    }
+    
+    .wave#wave2 {
+        z-index: 999;
+        opacity: 0.5;
+        bottom: 10px;
+        animation: animate 4s linear infinite !important;
+    }
+    
+    .wave#wave3 {
+        z-index: 1000;
+        opacity: 0.2;
+        bottom: 15px;
+        animation: animateWaves 3s linear infinite;
+    }
+    
+    .wave#wave4 {
+        z-index: 999;
+        opacity: 0.7;
+        bottom: 20px;
+        animation: animate 3s linear infinite;
+    }
+    
+    #copy ,#madeWith{
+        color: #000;
+        font-weight: bold;
+    }
+    @keyframes animateWaves {
+        0% {
+        background-position-x: 1000px;
+        }
+        100% {
+        background-positon-x: 0px;
+        }
+    }
+    
+    @keyframes animate {
+        0% {
+        background-position-x: -1000px;
+        }
+        100% {
+        background-positon-x: 0px;
+        }
+    }
+    
