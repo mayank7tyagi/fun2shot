@@ -126,6 +126,18 @@ h1 {
   color: white;
 }
 
+@media(max-width: 500px){
+  .grid {
+    width: 20em;
+    height: 20em;
+  }
+  .box {
+    width: 77.62px;
+    height: 77.62px;
+    font-size: 30px;
+  }
+}
+
 .box-2048 {
   background-color: #ecc230;
   color: white;
