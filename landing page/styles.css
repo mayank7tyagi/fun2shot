@@ -8,12 +8,12 @@
 }
 
 
-/* .container{
+.container{
     width: 100%;
     min-height: 100vh;
-    backdrop-filter: blur(1px);
-    pointer-events: none;
-} */
+/*     backdrop-filter: blur(1px);
+    pointer-events: none; */
+} 
 
 body{
     font-size: 12px;
@@ -122,7 +122,7 @@ span{
     align-items: center;
     position: relative;
     top: 120px;
-    left: 80px;
+    left: 115px;
 }
 
 /* Define styles for individual cards */
@@ -200,39 +200,7 @@ body{
     }
 }
 
-    /* Making it responsive  */
-    @media (max-width: 768px) {
-        .card-container {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr); /* Two columns in the grid */
-    
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            top: 120px;
-        }
-        .c11 {
-            margin-bottom: 15px;
-        }
-    
-        .card img {
-        height: 60%;
-        }
-    
-        .card h3 {
-        font-size: 14px;
-        }
-        .colorful-text {
-            font-size: 36px;
-        
-        }
-        .card{
-            width: 250px;
-            font-size: 20px;
-        }
-    }
-
-
+  
 
 /* In this code, I've used CSS Grid to create a 3x4 grid, resulting in 12 grid cells.
 Since you want 11 cards, you can adjust the number of cards to fit your layout.
@@ -568,4 +536,58 @@ button {
         background-positon-x: 0px;
         }
     }
+
+   /* Making it responsive  */
+    @media (max-width: 500px) {
+      .card-container {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr); /* Two columns in the grid */
+  
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          top: 120px;
+      }
+      .c11 {
+          margin-bottom: 15px;
+      }
+  
+      .card img {
+      height: 60%;
+      }
+  
+      .card h3 {
+      font-size: 14px;
+      }
+      .colorful-text {
+          font-size: 36px;
+      
+      }
+      .card{
+          width: 250px;
+          font-size: 20px;
+      }
+
+      .footer {
+        position: relative;
+        bottom: -2690px; 
+        width: 130%;
+      
+      }
+      
+      .bgAnimation{
+      
+        width: 100%;
+        height: 100%;
+      
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(40,1fr);
+      
+      }
+  
+      .card {
+        width: 250px;
+        height: 180px;
+      }
+  }
     
